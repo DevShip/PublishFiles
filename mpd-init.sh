@@ -57,4 +57,3 @@ systemctl status mpd-watchdog
 
 echo • ===================================================================================== •
 mpc current
-rm mpd-init.sh
