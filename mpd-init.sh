@@ -11,7 +11,9 @@ mpc clear
 mpc add https://listen2.myradio24.com/8226
 mpc add http://195.242.219.208:8200/enigma
 
+mkdir /srv/http
 mkdir /srv/http/command
+
 cd /srv/http/command
 wget https://raw.githubusercontent.com/DevShip/PublishFiles/main/mpd-watchdog
 chmod +x mpd-watchdog
