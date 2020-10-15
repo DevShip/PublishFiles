@@ -3,7 +3,7 @@ Description=RuneAudio MPD watchdog
 After=mpd.service
 
 [Service]
-ExecStart=/var/http/command/mpd-watchdog
+ExecStart=/srv/http/command/mpd-watchdog
 TimeoutSec=0
 Restart=always
 RestartSec=1
