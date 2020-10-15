@@ -1,0 +1,14 @@
+[Unit]
+Description=RuneAudio MPD watchdog
+After=mpd.service
+
+[Service]
+ExecStart=/var/www/command/mpd-watchdog
+TimeoutSec=0
+Restart=always
+RestartSec=1
+StartLimitInterval=30
+StartLimitBurst=20
+
+[Install]
+WantedBy=multi-user.target
