@@ -97,15 +97,10 @@ prev_status=$(mpc_status)
 while sleep $INTERVAL; do
     status=$(mpc_status)
 
-    if [ -n "$status" ]; then
-        log info "$status"
-        if [ "$prev_status" = "$status" ]; then
+        if [ ("$prev_status" = "$status")||(-z "$status") ]; then
             log warning "restarting mpd"
             $MPC stop && $MPC play || log err "error restarting mpd"
         fi
-    else
-        log debug "mpd not running/playing"
-    fi
-
+        
     prev_status="$status"
 done
