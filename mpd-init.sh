@@ -39,20 +39,22 @@ mpc play
 echo • ===================================================================================== •
 mkdir /srv/http && mkdir /srv/http/command
 cd /srv/http/command
-echo • ===================================================================================== •
 
+echo • ===================================================================================== •
+rm /srv/http/command/mpd-watchdog > /dev/null
 wget https://raw.githubusercontent.com/DevShip/MarketAudioPlayer/main/mpd-watchdog
 chmod +x mpd-watchdog
 
 echo • ===================================================================================== •
 cd /usr/lib/systemd/system
+rm /usr/lib/systemd/system/mpd-watchdog.service > /dev/null
 wget https://raw.githubusercontent.com/DevShip/MarketAudioPlayer/main/mpd-watchdog.service
 
 echo • ===================================================================================== •
 systemctl enable mpd-watchdog
 systemctl start mpd-watchdog
 systemctl status mpd-watchdog
-echo • ===================================================================================== •
 
+echo • ===================================================================================== •
 mpc current
 rm mpd-init.sh
