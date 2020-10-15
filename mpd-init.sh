@@ -1,6 +1,6 @@
 #/bin/sh
 
-sudo apt-get install -f mpd mpc
+sudo apt-get --yes --force-yes install -f mpd mpc
 sudo alsamixer && alsactl store 0
 
 mpc repeat on && mpc random on
