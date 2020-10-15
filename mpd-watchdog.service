@@ -1,5 +1,5 @@
 [Unit]
-Description=RuneAudio MPD watchdog
+Description=MarketAudioPlayer - MPD watchdog service
 After=mpd.service
 
 [Service]
