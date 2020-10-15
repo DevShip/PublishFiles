@@ -17,10 +17,10 @@ mkdir /srv/http
 mkdir /srv/http/command
 
 cd /srv/http/command
-wget https://raw.githubusercontent.com/DevShip/PublishFiles/main/mpd-watchdog
+wget https://raw.githubusercontent.com/DevShip/MarketAudioPlayer/main/mpd-watchdog
 chmod +x mpd-watchdog
 cd /usr/lib/systemd/system
-wget https://raw.githubusercontent.com/DevShip/PublishFiles/main/mpd-watchdog.service
+wget https://raw.githubusercontent.com/DevShip/MarketAudioPlayer/main/mpd-watchdog.service
 systemctl enable mpd-watchdog
 
 systemctl start mpd-watchdog
