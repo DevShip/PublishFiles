@@ -97,7 +97,7 @@ prev_status=$(mpc_status)
 while sleep $INTERVAL; do
     status=$(mpc_status)
 
-        if [ "$prev_status" = "$status" ] || [-z "$status" ]; then
+        if [ -z "$status" -o "$prev_status" = "$status" ]; then # условие -o (ИЛИ) -z (значение пустое)
             log warning "restarting mpd"
             $MPC stop && $MPC play || log err "error restarting mpd"
         fi
