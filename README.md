@@ -1,6 +1,7 @@
 # MarketAudioPlayer
 
 Audio player optimized for Orange Zero (+)
+ with auto reconnect on playing stream fail
 
 default play list:
  >https://listen2.myradio24.com/8226
