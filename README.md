@@ -4,6 +4,7 @@ Audio player optimized for Orange Zero (+)
 
 default play list:
  >https://listen2.myradio24.com/8226
+ 
  >http://195.242.219.208:8200/enigma
 
 
