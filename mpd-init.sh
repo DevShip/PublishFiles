@@ -34,7 +34,7 @@ mpc repeat on && mpc random on
 mpc clear
 # mpc add https://listen2.myradio24.com/8226
 # mpc add http://195.242.219.208:8200/enigma
-moc add https://montecarlo.hostingradio.ru/montecarlo96.aacp
+mpc add https://montecarlo.hostingradio.ru/montecarlo96.aacp
 mpc play
 
 echo • ===================================================================================== •
