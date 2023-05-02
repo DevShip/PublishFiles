@@ -59,3 +59,6 @@ systemctl status mpd-watchdog
 
 echo • ===================================================================================== •
 mpc current
+
+
+systemctl status mpd.service
