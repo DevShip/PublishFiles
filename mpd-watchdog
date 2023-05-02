@@ -101,7 +101,7 @@ while sleep $INTERVAL; do
             log warning "restarting mpd"
             $MPC stop
             $MPC clear
-            $MPC add https://montecarlo.hostingradio.ru/montecarlo96.aacp
+            $MPC add http://10.79.0.19:8000/
             $MPC play || log err "error restarting mpd"
         fi
         
